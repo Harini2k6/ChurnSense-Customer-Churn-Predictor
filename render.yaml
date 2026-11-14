@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: churnsense-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
+      - key: ALLOWED_ORIGINS
+        sync: false   # you type your Vercel address in the Render dashboard

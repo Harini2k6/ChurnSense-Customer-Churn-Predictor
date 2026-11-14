@@ -1,0 +1,8 @@
+# Backend (API) requirements. Versions match the ones your model was saved with.
+fastapi
+uvicorn==0.54.0
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0

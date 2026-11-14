@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+.git/
+.vercel/
+.DS_Store
+2_b2b_saas_churn_ltv.csv

@@ -1,0 +1,3 @@
+# Only needed if you also want to run the original Streamlit app (app.py)
+-r requirements.txt
+streamlit==1.64.0
